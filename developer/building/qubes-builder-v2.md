@@ -37,7 +37,14 @@ if you don't know which executor to use, use docker.
    Builder v2. It can be an AppVM or a Standalone qube, with some steps
    different between the two.
 
-2. Installing dependencies
+2. Clone the qubes-builder v2 repository into a location of your choice:
+
+    ```shell
+    git clone https://github.com/QubesOS/qubes-builderv2
+    cd qubes-builderv2/
+    ```
+
+3. Installing dependencies
 
    - If you want to use an app qube for developing, install dependencies in the template.
    If you are using a standalone, install them in the qube itself.
@@ -60,13 +67,6 @@ if you don't know which executor to use, use docker.
 
     If you have installed dependencies in the template, close it, and
     (re)start the development qube.
-
-3. Clone the qubes-builder v2 repository into a location of your choice:
-
-    ```shell
-    git clone https://github.com/QubesOS/qubes-builderv2
-    cd qubes-builderv2/
-    ```
 
 4. If you haven't previously used docker in the current qube, you need to set up
    some permissions. In particular, the user has to be added to the `docker`
